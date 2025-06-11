@@ -1,37 +1,37 @@
-# Protalent Backend
+# Backend de Protalent
 
-## Prerequisites
+## Prerrequisitos
 
-- **Node.js** v18 or later
-- **MySQL** running instance
+- **Node.js** v18 o posterior
+- **MySQL** instancia en ejecución
 
-## Installation
+## Instalación
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Create a `.env` file in the project root with the following variables:
-   ```env
-   PORT=5000 # optional
-   DB_HOST=localhost
-   DB_PORT=3306
-   DB_NAME=your_database
-   DB_USER=your_user
-   DB_PASSWORD=your_password
-   JWT_SECRET=your_secret_key
-   ```
-3. Ensure MySQL is running and accessible using the credentials above.
+1. Instalar dependencias:
+```bash
+npm install
+```
+2. Crear un archivo `.env` en la raíz del proyecto con las siguientes variables:
+```env
+PORT=5000 # opcional
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=your_database
+DB_USER=your_user
+DB_PASSWORD=your_password
+JWT_SECRET=your_secret_key
+```
+3. Asegurarse de que MySQL se esté ejecutando y sea accesible con las credenciales mencionadas anteriormente.
 
-## Running the server
+## Ejecución del servidor
 
-- For development with automatic reload:
-  ```bash
-  npm run dev
-  ```
-- For production/standard execution:
-  ```bash
-  npm start
-  ```
+- Para desarrollo con recarga automática:
+```bash
+npm run dev
+```
+- Para producción/ejecución estándar:
+```bash
+npm start
+```
 
-The server listens on the port defined by `PORT` (defaults to `5000`) and connects to MySQL using the details from `.env`.
+El servidor escucha en el puerto definido por `PORT` (predeterminado: `5000`) y se conecta a MySQL utilizando la información de `.env`.
