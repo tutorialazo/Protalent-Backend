@@ -5,7 +5,10 @@ const dotenv = require('dotenv');
 dotenv.config({ path: require('path').resolve(__dirname, '../../.env') });
 
 
-console.log('Usuario desde .env:', process.env.DB_USER); 
+// Log only in non-production environments for debugging
+if (process.env.NODE_ENV !== 'production') {
+  console.debug('Usuario desde .env:', process.env.DB_USER);
+}
 
 const sequelize = new Sequelize(
   process.env.DB_NAME,
