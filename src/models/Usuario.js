@@ -11,8 +11,8 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     cv: {
-      type: DataTypes.STRING,       // Puedes guardar la ruta o URL del archivo PDF
-      allowNull: true,              // ✅ Opcional
+      type: DataTypes.STRING, // Puedes guardar la ruta o URL del archivo PDF
+      allowNull: true,        // ✅ Opcional
     }
   });
 };
